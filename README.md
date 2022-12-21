@@ -13,8 +13,8 @@ Then create a new ROS worspace and run the commands below in the src folder to c
 - `git clone -b med18_gazebo9 https://github.com/gsilano/mav_comm.git`
 
 Then run following commands in the root of your workspace to build your package.
--`rosdep install --from-paths src -i`
--`rosdep update`
--`catkin config --cmake-args -DCMAKE_BUILD_TYPE=Release -DCATKIN_ENABLE_TESTING=False`
--`catkin build`
+- `rosdep install --from-paths src -i`
+- `rosdep update`
+- `catkin config --cmake-args -DCMAKE_BUILD_TYPE=Release -DCATKIN_ENABLE_TESTING=False`
+- `catkin build`
 Now source the setup file of your workspace.
