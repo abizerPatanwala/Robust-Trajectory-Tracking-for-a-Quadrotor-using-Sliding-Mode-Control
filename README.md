@@ -1,5 +1,11 @@
 # Robust-Trajectory-Tracking-for-Quadrotor-UAVs-using-Sliding-Mode-Control
-The aim of this project is to develop a **sliding mode control** for a Quadrotor to enable it to autonomously track a trajectory. A mirco aerial vehicle (MAV) named [**Crazyflie 2.0**](https://www.bitcraze.io/products/old-products/crazyflie-2-0/) is used as a platform. The simulation of the system is done in ROS Noetic and Gazebo  
+The aim of this project is to develop a **sliding mode control** for a Quadrotor to enable it to autonomously track a trajectory. A mirco aerial vehicle (MAV) named [**Crazyflie 2.0**](https://www.bitcraze.io/products/old-products/crazyflie-2-0/) is used as a platform. The simulation of the system is done in ROS Noetic and Gazebo. The trajectory tracked is described below. The Quadrotor is supposed to start from origin (0,0,0) and visit 5 waypoints.
+- p0 = (0, 0, 0) to p1 = (0, 0, 1) in 5 seconds
+- p1 = (0, 0, 1) to p2 = (1, 0, 1) in 15 seconds
+- p2 = (1, 0, 1) to p3 = (1, 1, 1) in 15 seconds
+- p3 = (1, 1, 1) to p4 = (0, 1, 1) in 15 seconds
+- p4 = (0, 1, 1) to p5 = (0, 0, 1) in 15 seconds
+
 # Crazyflie 2.0 Setup in Gazebo
 Run the following command below on the ubuntu terminal to install the required packages to run Crazyflie 2.0 simulation in gazebo.
 - `sudo apt update`
