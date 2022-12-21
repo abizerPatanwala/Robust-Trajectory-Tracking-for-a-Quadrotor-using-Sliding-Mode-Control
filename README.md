@@ -17,4 +17,5 @@ Then run following commands in the root of your workspace to build your package.
 - `rosdep update`
 - `catkin config --cmake-args -DCMAKE_BUILD_TYPE=Release -DCATKIN_ENABLE_TESTING=False`
 - `catkin build`
+
 Now source the setup file of your workspace.
