@@ -6,7 +6,7 @@ The aim of this project is to develop a **sliding mode control** for a Quadrotor
 - p3 = (1, 1, 1) to p4 = (0, 1, 1) in 15 seconds
 - p4 = (0, 1, 1) to p5 = (0, 0, 1) in 15 seconds
 
-# Crazyflie 2.0 Setup in Gazebo
+## Crazyflie 2.0 Setup in Gazebo
 Run the following command below on the ubuntu terminal to install the required packages to run Crazyflie 2.0 simulation in gazebo.
 - `sudo apt update`
 - `sudo apt install ros-noetic-joy ros-noetic-octomap-ros ros-noetic-mavlink`
@@ -27,7 +27,7 @@ Then run following commands in the root of your workspace to build your package.
 
 Now source the setup file of your workspace.
 
-# System Simulation
+## System Simulation
 To simulate the system, first download the *project* folder in the source folder of your workspace and build the package. Source the setup file of your workspace. Then spawn the Quadrotor in gazebo by running the following command:
 `roslaunch rotors_gazebo crazyflie2_without_controller.launch`
 Go to the script folder and make *code.py* executable by executing following command 'chmod +x code.py'
