@@ -1,5 +1,5 @@
 # Robust-Trajectory-Tracking-for-Quadrotor-UAVs-using-Sliding-Mode-Control
-The aim of this project is to develop a **sliding mode control** for a Quadrotor to enable it to autonomously track a trajectory. A mirco aerial vehicle (MAV) named [**Crazyflie 2.0**](https://www.bitcraze.io/products/old-products/crazyflie-2-0/) is used as a platform. The simulation of the system is done in ROS Noetic and Gazebo. The trajectory tracked is described below. The Quadrotor is supposed to start from origin (0,0,0) and visit 5 waypoints.
+The aim of this project is to develop a **sliding mode control** for a Quadrotor to enable it to autonomously track a trajectory. A mirco aerial vehicle (MAV) named [**Crazyflie 2.0**](https://www.bitcraze.io/products/old-products/crazyflie-2-0/) is used as a platform. The simulation of the system is done in ROS Noetic and Gazebo. The trajectory tracked is described below. The Quadrotor is supposed to start from origin (0,0,0) and visit 5 waypoints. The velocity and acceleration at each waypoint is zero. Using these waypoints a quintic rajectory is generated and sliding mode control is used to track the trajectory.
 - p0 = (0, 0, 0) to p1 = (0, 0, 1) in 5 seconds
 - p1 = (0, 0, 1) to p2 = (1, 0, 1) in 15 seconds
 - p2 = (1, 0, 1) to p3 = (1, 1, 1) in 15 seconds
@@ -26,3 +26,11 @@ Then run following commands in the root of your workspace to build your package.
 - `catkin build`
 
 Now source the setup file of your workspace.
+
+# System Simulation
+To simulate the system, first download the *project* folder in the source folder of your workspace and build the package. Source the setup file of your workspace. Then spawn the Quadrotor in gazebo by running the following command:
+`roslaunch rotors_gazebo crazyflie2_without_controller.launch`
+Go to the script folder and make *code.py* executable by executing following command 'chmod +x code.py'
+When the Quadrotor is spawned, run the following command to start the controller.
+`rosrun project code.py`
+The quadrotor will track the trajectory given above. After the tracking is complete, the data is saved in *log.pkl*. In the *script* folder run the following command to visualize the trajectory `python3 plot.py`. 
