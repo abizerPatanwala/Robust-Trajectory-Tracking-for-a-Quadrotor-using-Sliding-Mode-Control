@@ -8,6 +8,7 @@ Run the following command below on the ubuntu terminal to install the required p
 - `sudo apt install python3-vcstool python3-catkin-tools protobuf-compiler libgoogle-glog-dev`
 - `rosdep update`
 - `sudo apt-get install ros-noetic-ros libgoogle-glog-dev`
+
 Then create a new ROS worspace and run the commands below in the src folder to clone the setup files of Crazyflie 2.0
 - `git clone -b dev/ros-noetic https://github.com/gsilano/CrazyS.git`
 - `git clone -b med18_gazebo9 https://github.com/gsilano/mav_comm.git`
