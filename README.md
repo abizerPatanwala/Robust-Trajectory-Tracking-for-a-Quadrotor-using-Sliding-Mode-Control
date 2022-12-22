@@ -1,5 +1,5 @@
 # Robust-Trajectory-Tracking-for-a-Quadrotor-using-Sliding-Mode-Control
-[^1]: This project was done as part of RBE502 Controls Graduate Course in RBE department of WPI, by myself and [dushyant6](https://github.com/dushyant6). 
+[^1]: This project was done as part of a graduate course, RBE502 Controls from RBE department of WPI, by myself and [dushyant6](https://github.com/dushyant6). 
 
 [^1]The aim of this project is to develop a **sliding mode control** for a Quadrotor to enable it to autonomously track a trajectory. A mirco aerial vehicle (MAV) named [**Crazyflie 2.0**](https://www.bitcraze.io/products/old-products/crazyflie-2-0/) is used as a platform. The simulation of the system is done in ROS Noetic and Gazebo. The trajectory tracked is described below. The Quadrotor is supposed to start from origin (0,0,0) and visit 5 waypoints. The velocity and acceleration at each waypoint is zero. Using these waypoints a quintic rajectory is generated and sliding mode control is used to track the trajectory. The *output* folder contains the visualization of the trajectory tracked by quadrotor against ground truth and the video of quadrotor tracking the trajectory in gazebo.
 - p0 = (0, 0, 0) to p1 = (0, 0, 1) in 5 seconds
