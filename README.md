@@ -1,4 +1,5 @@
 # Robust-Trajectory-Tracking-for-a-Quadrotor-using-Sliding-Mode-Control
+## Overview 
 [^1]: This project was done as part of a graduate course, RBE502 Controls from RBE department of WPI, by myself and [dushyant6](https://github.com/dushyant6) under the guidance of [Professor Siavash Farzan](https://github.com/sfarzan). 
 
 [^1]The aim of this project is to develop a **sliding mode control** for a Quadrotor to enable it to autonomously track a trajectory. A mirco aerial vehicle (MAV) named [**Crazyflie 2.0**](https://www.bitcraze.io/products/old-products/crazyflie-2-0/) is used as a platform. The simulation of the system is done in ROS Noetic and Gazebo. The trajectory tracked is described below. The Quadrotor is supposed to start from origin (0,0,0) and visit 5 waypoints. The velocity and acceleration at each waypoint is zero. Using these waypoints a quintic rajectory is generated and sliding mode control is used to track the trajectory. The *output* folder contains the visualization of the trajectory tracked by quadrotor against ground truth and the video of quadrotor tracking the trajectory in gazebo.
@@ -29,7 +30,7 @@ Then run following commands in the root of your workspace to build your package.
 
 Now source the setup file of your workspace.
 
-## System Simulation
+## Simulation
 To simulate the system, first download the *project* folder in the source folder of your workspace and build the package. Source the setup file of your workspace. Then spawn the Quadrotor in gazebo by running the following command:
 `roslaunch rotors_gazebo crazyflie2_without_controller.launch`
 Go to the script folder and make *code.py* executable by executing following command `chmod +x code.py`
