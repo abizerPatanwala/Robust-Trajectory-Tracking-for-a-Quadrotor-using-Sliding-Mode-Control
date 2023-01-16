@@ -33,7 +33,4 @@ Now source the setup file of your workspace.
 ## Simulation
 To simulate the system, first download the *project* folder in the source folder of your workspace and build the package. Source the setup file of your workspace. Then spawn the Quadrotor in gazebo by running the following command:
 `roslaunch rotors_gazebo crazyflie2_without_controller.launch`
-Go to the script folder and make *code.py* executable by executing following command `chmod +x code.py`
-When the Quadrotor is spawned, run the following command to start the controller.
-`rosrun project code.py`
-The quadrotor will track the trajectory given above. After the tracking is complete, the data is saved in *log.pkl*. In the *script* folder run the following command to visualize the trajectory `python3 plot.py`. 
+Then run the quadrotor control file to simulate the system tracking the trajectory. The output is compared against the groundtruth and saved in #trajectory.png# file in the output folder. The video of the output can be viewed by playing #rbe502_project_video.mp4# file in the output folder.
