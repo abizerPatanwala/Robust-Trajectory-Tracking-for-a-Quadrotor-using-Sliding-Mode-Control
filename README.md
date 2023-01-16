@@ -8,6 +8,7 @@
 - p2 = (1, 0, 1) to p3 = (1, 1, 1) in 15 seconds
 - p3 = (1, 1, 1) to p4 = (0, 1, 1) in 15 seconds
 - p4 = (0, 1, 1) to p5 = (0, 0, 1) in 15 seconds
+
 **This project is protected under copyright policy of the course and hence the code files were not uploaded**.
 
 ## Crazyflie 2.0 Setup in Gazebo
